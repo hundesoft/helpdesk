@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CommonLayoutModule } from './common-layout/common-layout.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AuthenticationModule } from './authentication/authentication.module';
+import { HelpDeskModule } from './help-desk/help-desk.module';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     CommonLayoutModule,
+    AuthenticationModule,
+    HelpDeskModule,
     BrowserAnimationsModule
   ],
   providers: [],

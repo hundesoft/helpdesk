@@ -1,0 +1,23 @@
+<span>list of Help Desk system User</span>
+<table>
+<thead>
+<tr>
+    <th>id</th>
+    <th>user name</th>
+    <th>role</th>
+    <th>Action</th>
+</tr>
+</thead>
+    <tbody>
+<tr *ngFor="let data of userAccount">
+    <td>{{data.id}}</td>
+    <td>{{data.username}}</td>
+    <td>{{data.role}}</td>
+    <td>
+        <button class="add-button" mat-button color="primary" > <mat-icon>edit</mat-icon></button>
+        <button class="add-button" mat-button color="accent" > <mat-icon>folder_open</mat-icon></button>
+        <button class="add-button" mat-button color="warn" > <mat-icon>delete</mat-icon></button>
+</td>
+</tr>
+    </tbody>
+</table>
